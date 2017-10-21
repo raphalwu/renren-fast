@@ -1,4 +1,4 @@
-package io.renren.modules.api.test;
+package io.renren.modules.api.test.controller;
 
 import io.renren.common.annotation.SysLog;
 import io.renren.common.exception.RRException;
