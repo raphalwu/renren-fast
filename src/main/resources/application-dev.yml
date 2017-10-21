@@ -36,3 +36,9 @@ spring:
                 wall:
                     config:
                         multi-statement-allow: true
+test:
+    enable-interceptor: false
+    name: 测试参数
+
+
+

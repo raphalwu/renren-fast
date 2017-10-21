@@ -20,7 +20,8 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping("/swagger")
 
-@Api(value = "Test", description = "SwaggerTestController相关api")
+@Api(value = "Test", description = "Swagger测试api")
+//@Api(tags = "SwaggerTestController相关api")
 public class SwaggerTestController {
 
     @Autowired

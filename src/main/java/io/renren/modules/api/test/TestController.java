@@ -18,7 +18,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/test/")
-@Api(tags = "测试api，增删改查规范")
+//@Api(tags = "api测试，增删改查规范")
+@Api(value = "Test", description = "api测试，增删改查规范")
 public class TestController {
     @Autowired
     private SysMenuService sysMenuService;
@@ -37,7 +38,7 @@ public class TestController {
      */
     @SysLog("保存菜单")
     @ApiOperation("保存菜单")
-    @PostMapping("/save")
+    @PostMapping("save")
     public R save(@RequestBody SysMenuEntity menu){
         //数据校验
         verifyForm(menu);
@@ -52,7 +53,7 @@ public class TestController {
      */
     @SysLog("修改菜单")
     @ApiOperation("修改菜单")
-    @PutMapping("/update")
+    @PutMapping("update")
 //    @RequiresPermissions("sys:menu:update")
     public R update(@RequestBody SysMenuEntity menu){
         //数据校验
@@ -68,7 +69,7 @@ public class TestController {
      */
     @SysLog("删除菜单")
     @ApiOperation("删除菜单")
-    @DeleteMapping("/delete")
+    @DeleteMapping("delete")
 //    @RequiresPermissions("sys:menu:delete")
     public R delete(long menuId){
         if(menuId <= 30){
