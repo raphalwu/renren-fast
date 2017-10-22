@@ -1,9 +1,11 @@
 package io.renren.modules.api.test.controller;
 
 import io.renren.common.annotation.SysLog;
+import io.renren.common.annotation.TestAnnotation;
 import io.renren.common.exception.RRException;
 import io.renren.common.utils.Constant;
 import io.renren.common.utils.R;
+import io.renren.modules.api.annotation.AuthIgnore;
 import io.renren.modules.sys.entity.SysMenuEntity;
 import io.renren.modules.sys.service.SysMenuService;
 import io.swagger.annotations.Api;
@@ -96,5 +98,14 @@ public class TestController {
                 throw new RRException("菜单URL不能为空");
             }
         }
+    }
+
+    @ApiOperation("自定义注解测试")
+    @GetMapping("testAnnotation")
+    @TestAnnotation
+    @AuthIgnore
+    public String testAnnotation(){
+         System.out.println("===========自定义注解控制器=============");
+        return null;
     }
 }

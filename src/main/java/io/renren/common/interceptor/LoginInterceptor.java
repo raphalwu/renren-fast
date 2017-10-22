@@ -12,6 +12,10 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 个人添加的登陆拦截
+ * 框架拦截器modules里已实现
+ */
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
 
