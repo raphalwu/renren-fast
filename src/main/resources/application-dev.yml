@@ -8,8 +8,8 @@ spring:
                 username: root
                 password: 123456
             second:  #数据源2
-                url: jdbc:mysql://localhost:3306/bdshop?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-                username: renren
+                url: jdbc:mysql://localhost:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+                username: root
                 password: 123456
             initial-size: 10
             max-active: 100

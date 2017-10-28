@@ -1,3 +1,8 @@
+**mybatis-generator**
+mvn命令：mvn mybatis-generator:generate
+         mvn clean mybatis-generator:generate
+
+
 **项目说明** 
 - renren-fast是一个轻量级的Java快速开发平台，能快速开发项目并交付【接私活利器】
 <br> 
