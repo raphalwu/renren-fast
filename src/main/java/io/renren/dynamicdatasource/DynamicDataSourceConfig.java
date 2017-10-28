@@ -16,7 +16,7 @@ import java.util.Map;
  * @email sunlightcs@gmail.com
  * @date 2017/8/19 0:41
  */
-@Configuration
+//@Configuration
 public class DynamicDataSourceConfig {
 
     @Bean

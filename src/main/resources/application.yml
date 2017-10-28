@@ -37,7 +37,7 @@ spring:
             min-idle: 5       # 连接池中的最小空闲连接
 
 # Mybatis配置
-mybatis:
-    mapperLocations: classpath:mapper/**/*.xml
-    configLocation: classpath:mybatis.xml
+#mybatis:
+#    mapperLocations: classpath:mapper/**/*.xml
+#    configLocation: classpath:mybatis.xml
 
